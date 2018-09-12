@@ -1,0 +1,116 @@
+<HTML>
+<meta charset="utf-8">
+  <head>
+    <title> Buy Items Now! </title>
+    <style>
+    .coins-page {
+      background-image: linear-gradient(#cc9966, #ecd9c6);
+      height: 300px;
+      width: 500px;
+      border-color: #ac7339;
+      border-style: outset;
+      border-radius: 20px;
+      box-shadow: 7px 7px 10px #dfbf9f;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 150px;
+    }
+    #coins-table > p{
+      font-family: cursive;
+      font-size: 40px;
+      color: #130d06;
+      font-weight: lighter;
+      text-shadow: 3px 3px 2px #dfbf9f;
+      border-style: groove;
+      border-color: #804000;
+      border-radius: 10px;
+      display: inline;
+      transform: translate(130px, 10px);
+      padding: 10px 5px 5px 5px;
+      box-shadow: 3px 3px 20px #dfbf9f;
+    }
+    #itemkind {
+      font-family: cursive;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-left: 20px;
+      text-align: left;
+      line-height: 3px;
+    }
+      .button-buy {
+      background-color: #86592d;
+      height: 50px;
+      width: 100px;
+      margin: auto;
+      border-color: #c68c53;
+      border-style: groove;
+      border-radius: 5px;
+      box-shadow: 2px 2px #dfbf9f;
+    }
+    .button-buy:active {
+      background-color: #ac7339;
+      color: #130d06;
+      font-family: cursive;
+    }
+     .button-buy {
+       text-shadow: 2px 2px 5px #dfbf9f;
+      font-family: cursive;
+      color:#130d06;
+      font-size: 30px;
+      text-align: center;
+      transform: translate(200px, 3px);
+    }
+    #wallet {
+      background-color: white;
+      height: 140px;
+      width: 230px;
+      border-color: #ac7339;
+      border-style: outset;
+      border-radius: 20px;
+      box-shadow: 7px 7px 10px #dfbf9f;
+      transform: translate(230px, -210px);
+    }
+    #Inventory {
+      font-size: 18px;
+      font-family: cursive;
+      text-align: right;
+      width: 230px;
+      height: 140px;
+      border-radius: 14px;
+      padding: 0px 0px 100px 150px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="coins-page">
+    <div id="coins-table">
+      <p> Buy Items Now </p>
+        <div id="itemkind">
+          <p> Item Kind </p>
+            <select name="Kind" size="1">
+              <option value="Armor"> Armor </option>
+              <option value="Shields"> Shields </option>
+              <option value="Boots"> Boots </option>
+              <option value="Rings"> Rings </option>
+              <option value="Herbs"> Healing Herbs </option>
+              <option value="Staff"> Magic Staff </option>
+              <option value="Sword"> Magic Sword </option>
+            </select>
+          <p> Quality</p>
+          <select name="Quality" size="1">
+            <option value="Simple"> Simple </option>
+            <option value="Good"> Good </option>
+            <option value="Rare"> Rare </option>
+            <option value="Mythic"> Mythic </option>
+            <option value="Epic"> Legendary </option>
+          </select>
+          <p> Coins </p>
+          <input type="text" value="500 GOLD COINS" disabled>
+        </div>
+        <button class="button-buy"> BUY </button>
+       <div id="wallet">
+         <input type="label" id="Inventory" value="Inventory" disabled>
+    </div>
+  </body>
+<HTML>
